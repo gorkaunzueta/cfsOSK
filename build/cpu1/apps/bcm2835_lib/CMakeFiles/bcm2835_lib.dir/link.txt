@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -Wall     -D_XOPEN_SOURCE=600    -g  -shared  -o bcm2835_lib.so CMakeFiles/bcm2835_lib.dir/fsw/src/bcm2835_lib.c.o  -lm 

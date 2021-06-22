@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -Wall     -D_XOPEN_SOURCE=600    -g  -shared  -o gps_app.so CMakeFiles/gps_app.dir/fsw/src/gps_app.c.o  -lm 

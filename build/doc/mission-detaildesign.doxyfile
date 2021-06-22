@@ -1,0 +1,23 @@
+#---------------------------------------------------------------------------
+# Doxygen options to generate the complete mission documentation
+#---------------------------------------------------------------------------
+
+# Start with the common definitions, some of which are extended or overridden here.
+@INCLUDE               = /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/build/doc/cfe-common.doxyfile
+PROJECT_NAME           = "OpenSatKit"
+PROJECT_BRIEF          = "Core Flight System project built using \"osk\" configuration"
+OUTPUT_DIRECTORY       = detaildesign
+
+INPUT                 += /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/osk_defs  \
+                         /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/osal/src/os/inc \
+                         /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/osal/src/os/shared \
+                         /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/psp/fsw/inc \
+                         /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/psp/fsw/shared \
+                         /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/cfe/fsw/cfe-core/src
+                         
+STRIP_FROM_PATH       += /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/osk_defs
+
+#---------------------------------------------------------------------------
+# The user content doxyfile contains paths to the mission-specific applications   
+#---------------------------------------------------------------------------
+@INCLUDE               = /home/pi/plathon/cfs-OSK/OpenSatKit/cfs/build/doc/mission-content.doxyfile

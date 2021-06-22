@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -Wall     -D_XOPEN_SOURCE=600    -g  -shared  -o mpu9dof_lib.so CMakeFiles/mpu9dof_lib.dir/fsw/src/mpu9dof_lib.c.o  -lm 
